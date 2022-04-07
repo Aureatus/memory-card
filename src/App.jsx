@@ -22,8 +22,8 @@ function App() {
 
   return (
     <div className="App">
+      <ScoreboardComponent score={score} />
       <div className="cards">
-        <ScoreboardComponent score={score} />
         <CardComponent
           number={1}
           shuffleCards={shuffleCards}
