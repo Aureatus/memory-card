@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import CardComponent from "./components/CardComponent";
+import ScoreboardComponent from "./components/ScoreboardComponent";
 
 function App() {
   const shuffleCards = () => {
@@ -9,13 +10,44 @@ function App() {
     }
   };
 
+  const [score, setScore] = useState(0);
+
+  const resetScore = () => {
+    setScore(0);
+  };
+
+  const incrementScore = () => {
+    setScore(score + 1);
+  };
+
   return (
     <div className="App">
       <div className="cards">
-        <CardComponent number={1} shuffleCards={shuffleCards} />
-        <CardComponent number={2} shuffleCards={shuffleCards} />
-        <CardComponent number={3} shuffleCards={shuffleCards} />
-        <CardComponent number={4} shuffleCards={shuffleCards} />
+        <ScoreboardComponent score={score} />
+        <CardComponent
+          number={1}
+          shuffleCards={shuffleCards}
+          resetScore={resetScore}
+          incrementScore={incrementScore}
+        />
+        <CardComponent
+          number={2}
+          shuffleCards={shuffleCards}
+          resetScore={resetScore}
+          incrementScore={incrementScore}
+        />
+        <CardComponent
+          number={3}
+          shuffleCards={shuffleCards}
+          resetScore={resetScore}
+          incrementScore={incrementScore}
+        />
+        <CardComponent
+          number={4}
+          shuffleCards={shuffleCards}
+          resetScore={resetScore}
+          incrementScore={incrementScore}
+        />
       </div>
     </div>
   );
