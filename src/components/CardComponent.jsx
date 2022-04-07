@@ -13,7 +13,7 @@ function CardComponent(props) {
 
   useEffect(() => {
     if (prevClickedRef.current === true && clicked === false) {
-      console.log("Game Over");
+      props.resetScore();
     }
 
     prevClickedRef.current = clicked;
@@ -21,9 +21,11 @@ function CardComponent(props) {
 
   return (
     <div
+      className={props.number}
       onClick={() => {
         props.shuffleCards();
         toggleClicked();
+        props.incrementScore();
       }}
     >
       {props.number}
