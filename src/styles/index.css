@@ -1,0 +1,23 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+div#root {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template: 1fr 4fr / 1fr;
+
+  justify-items: center;
+  align-items: center;
+}
