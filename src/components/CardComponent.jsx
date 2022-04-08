@@ -1,14 +1,23 @@
 import React, { useEffect, useState, useRef } from "react";
 
 function CardComponent(props) {
-  const [clicked, setClicked] = useState(false);
-
   const prevClickedRef = useRef();
+  const clicked = props.clickedArray[props.number - 1];
 
   const toggleClicked = () => {
     if (clicked === false) {
-      setClicked(true);
-    } else setClicked(false);
+      props.setClickedArray(
+        props.clickedArray.map((click, index) =>
+          index === props.number - 1 ? true : click
+        )
+      );
+    } else {
+      props.setClickedArray(
+        props.clickedArray.map((click, index) =>
+          index === props.number - 1 ? false : click
+        )
+      );
+    }
   };
 
   useEffect(() => {
