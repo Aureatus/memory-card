@@ -17,8 +17,12 @@ function App() {
     false,
   ]);
   const [score, setScore] = useState(0);
+  const [bestScore, setBestscore] = useState(0);
 
   const resetScore = () => {
+    if (score > bestScore) {
+      setBestscore(score);
+    }
     setScore(0);
     setClickedArray(clickedArray.map((click) => false));
   };
@@ -29,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      <ScoreboardComponent score={score} />
+      <ScoreboardComponent score={score} bestScore={bestScore} />
       <div className="cards">
         <CardComponent
           number={1}

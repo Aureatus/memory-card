@@ -6,6 +6,7 @@ function CardComponent(props) {
 
   const toggleClicked = () => {
     if (clicked === false) {
+      props.incrementScore();
       props.setClickedArray(
         props.clickedArray.map((click, index) =>
           index === props.number - 1 ? true : click
@@ -34,7 +35,6 @@ function CardComponent(props) {
       onClick={() => {
         props.shuffleCards();
         toggleClicked();
-        props.incrementScore();
       }}
     >
       {props.number}

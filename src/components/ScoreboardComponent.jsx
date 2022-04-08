@@ -4,7 +4,7 @@ function ScoreboardComponent(props) {
   return (
     <div>
       <div className="current-score">{props.score}</div>
-      <div className="best-score"></div>
+      <div className="best-score">{props.bestScore}</div>
     </div>
   );
 }
