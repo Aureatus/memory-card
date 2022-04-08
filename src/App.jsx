@@ -15,6 +15,10 @@ function App() {
     false,
     false,
     false,
+    false,
+    false,
+    false,
+    false,
   ]);
   const [score, setScore] = useState(0);
   const [bestScore, setBestscore] = useState(0);
@@ -31,42 +35,25 @@ function App() {
     setScore(score + 1);
   };
 
+  let keyCounter = 0;
+
   return (
     <div className="App">
       <ScoreboardComponent score={score} bestScore={bestScore} />
       <div className="cards">
-        <CardComponent
-          number={1}
-          clickedArray={clickedArray}
-          setClickedArray={setClickedArray}
-          shuffleCards={shuffleCards}
-          resetScore={resetScore}
-          incrementScore={incrementScore}
-        />
-        <CardComponent
-          number={2}
-          clickedArray={clickedArray}
-          setClickedArray={setClickedArray}
-          shuffleCards={shuffleCards}
-          resetScore={resetScore}
-          incrementScore={incrementScore}
-        />
-        <CardComponent
-          number={3}
-          clickedArray={clickedArray}
-          setClickedArray={setClickedArray}
-          shuffleCards={shuffleCards}
-          resetScore={resetScore}
-          incrementScore={incrementScore}
-        />
-        <CardComponent
-          number={4}
-          clickedArray={clickedArray}
-          setClickedArray={setClickedArray}
-          shuffleCards={shuffleCards}
-          resetScore={resetScore}
-          incrementScore={incrementScore}
-        />
+        {clickedArray.map((element, index) => {
+          return (
+            <CardComponent
+              number={index + 1}
+              key={keyCounter++}
+              clickedArray={clickedArray}
+              setClickedArray={setClickedArray}
+              shuffleCards={shuffleCards}
+              resetScore={resetScore}
+              incrementScore={incrementScore}
+            />
+          );
+        })}
       </div>
     </div>
   );
