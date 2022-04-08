@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import CardComponent from "./components/CardComponent";
 import ScoreboardComponent from "./components/ScoreboardComponent";
 
+import "./styles/App.css";
+
 function App() {
   const shuffleCards = () => {
     let element = document.querySelector(`.cards`);

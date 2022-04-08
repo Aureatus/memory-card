@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import "../styles/Card.css";
 
 function CardComponent(props) {
   const prevClickedRef = useRef();

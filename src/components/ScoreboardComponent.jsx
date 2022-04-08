@@ -1,5 +1,7 @@
 import React from "react";
 
+import "../styles/scoreboard.css";
+
 function ScoreboardComponent(props) {
   return (
     <div className="scoreboard">
