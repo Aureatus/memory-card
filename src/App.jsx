@@ -38,9 +38,12 @@ function App() {
   let keyCounter = 0;
 
   return (
-    <div className="App">
-      <ScoreboardComponent score={score} bestScore={bestScore} />
-      <div className="cards">
+    <>
+      <header>
+        <h1>Memory Card</h1>
+        <ScoreboardComponent score={score} bestScore={bestScore} />
+      </header>
+      <main className="cards">
         {clickedArray.map((element, index) => {
           return (
             <CardComponent
@@ -54,8 +57,8 @@ function App() {
             />
           );
         })}
-      </div>
-    </div>
+      </main>
+    </>
   );
 }
 
