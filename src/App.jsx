@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import CardComponent from "./components/CardComponent";
 import ScoreboardComponent from "./components/ScoreboardComponent";
 
