@@ -62,7 +62,7 @@ function App() {
   return (
     <>
       <header>
-        <h1>Memory Card</h1>
+        <h1>Despicable Me Memory Card Game</h1>
         <ScoreboardComponent score={score} bestScore={bestScore} />
       </header>
       <main className="cards">
