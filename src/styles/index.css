@@ -16,7 +16,7 @@ div#root {
   width: 100%;
 
   display: grid;
-  grid-template: 1fr 3fr / 1fr;
+  grid-template: 2fr 12fr / 1fr;
 
   justify-items: center;
   align-items: center;
