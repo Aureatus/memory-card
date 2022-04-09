@@ -4,6 +4,15 @@ import ScoreboardComponent from "./components/ScoreboardComponent";
 
 import "./styles/App.css";
 
+import vector from "./assets/Vector_wallpaper.webp";
+import gru from "./assets/Gru.webp";
+import drNefario from "./assets/Dr-Nefario-despicable-me-13776694-616-315.webp";
+import druGru from "./assets/Dru.webp";
+import lucyWilde from "./assets/Despicableme2-lucywilde-kristenwigg-300-01.webp";
+import brat from "./assets/Balthazar_Bratt.webp";
+import kevin from "./assets/3087299.webp";
+import margo from "./assets/Margo_Gru.webp";
+
 function App() {
   const shuffleCards = () => {
     let element = document.querySelector(`.cards`);
@@ -22,6 +31,17 @@ function App() {
     false,
     false,
   ]);
+
+  const imageArray = [
+    vector,
+    gru,
+    drNefario,
+    druGru,
+    lucyWilde,
+    brat,
+    kevin,
+    margo,
+  ];
   const [score, setScore] = useState(0);
   const [bestScore, setBestscore] = useState(0);
 
@@ -51,6 +71,7 @@ function App() {
             <CardComponent
               number={index + 1}
               key={keyCounter++}
+              image={imageArray[index]}
               clickedArray={clickedArray}
               setClickedArray={setClickedArray}
               shuffleCards={shuffleCards}

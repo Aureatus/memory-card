@@ -38,7 +38,9 @@ function CardComponent(props) {
         toggleClicked();
       }}
     >
-      <div></div>
+      <div>
+        <img src={props.image} alt="" />
+      </div>
     </div>
   );
 }
