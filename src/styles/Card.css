@@ -1,0 +1,21 @@
+main.cards > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 400px;
+  width: 300px;
+
+  background-color: #5c164e;
+  border: 6px solid #e2fcef;
+}
+
+main.cards > div > div {
+  box-sizing: border-box;
+  height: 360px;
+  width: 260px;
+
+  background-color: #c4c4c4;
+
+  border-radius: 15px;
+}
