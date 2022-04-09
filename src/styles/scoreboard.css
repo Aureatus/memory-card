@@ -1,0 +1,44 @@
+h2,
+p {
+  margin: 0%;
+}
+
+div.scoreboard {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+
+  justify-items: center;
+  align-items: center;
+}
+
+div.scoreboard > div {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+
+  justify-items: center;
+  align-items: center;
+
+  background-color: #170f1148;
+  color: #e2fcef;
+
+  border: 3px solid #e2fcef;
+  border-radius: 2%;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.scoreboard > div > h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+div.scoreboard > div > p {
+  font-size: 35px;
+  text-shadow: 1px 1px black;
+}
