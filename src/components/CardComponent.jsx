@@ -38,7 +38,7 @@ function CardComponent(props) {
         toggleClicked();
       }}
     >
-      {props.number}
+      <div></div>
     </div>
   );
 }
