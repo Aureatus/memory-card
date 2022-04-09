@@ -12,6 +12,8 @@ div.scoreboard {
 
   justify-items: center;
   align-items: center;
+
+  border: 1px solid #170f11;
 }
 
 div.scoreboard > div {
@@ -30,7 +32,6 @@ div.scoreboard > div {
   color: #e2fcef;
 
   border: 3px solid #e2fcef;
-  border-radius: 2%;
 
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }

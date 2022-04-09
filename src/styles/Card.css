@@ -3,11 +3,12 @@ main.cards > div {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  height: 400px;
+  height: 390px;
   width: 300px;
 
   background-color: #5c164e;
   border: 6px solid #e2fcef;
+  border-radius: 20px;
 }
 
 main.cards > div > div {
@@ -24,6 +25,6 @@ main.cards > div > div > img {
   height: 100%;
   width: 100%;
 
-  border-radius: 8px;
+  border-radius: 20px;
   background-color: white;
 }
