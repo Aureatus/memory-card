@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.e011ed70.css",
+    "main.js": "/memory-card/static/js/main.a4131ac6.js",
+    "static/media/3087299.webp": "/memory-card/static/media/3087299.2191a4a109d827f7936e.webp",
+    "static/media/Balthazar_Bratt.webp": "/memory-card/static/media/Balthazar_Bratt.74174a2cffd0007a7011.webp",
+    "static/media/Vector_wallpaper.webp": "/memory-card/static/media/Vector_wallpaper.a09030638c189179604c.webp",
+    "static/media/Gru.webp": "/memory-card/static/media/Gru.21094302d91c49035b0a.webp",
+    "static/media/Dr-Nefario-despicable-me-13776694-616-315.webp": "/memory-card/static/media/Dr-Nefario-despicable-me-13776694-616-315.62ecfae5051a6ba4363f.webp",
+    "static/media/Margo_Gru.webp": "/memory-card/static/media/Margo_Gru.9ed2d90a520eccc04864.webp",
+    "static/media/Dru.webp": "/memory-card/static/media/Dru.8ceafc787b12f577c1a3.webp",
+    "static/media/Despicableme2-lucywilde-kristenwigg-300-01.webp": "/memory-card/static/media/Despicableme2-lucywilde-kristenwigg-300-01.02ee08839b59e3f11467.webp",
+    "index.html": "/memory-card/index.html",
+    "main.e011ed70.css.map": "/memory-card/static/css/main.e011ed70.css.map",
+    "main.a4131ac6.js.map": "/memory-card/static/js/main.a4131ac6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e011ed70.css",
+    "static/js/main.a4131ac6.js"
+  ]
+}
